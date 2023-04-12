@@ -1,0 +1,96 @@
+/*styling for the whole HTML document tag, I put it in so the footer can actually stick down*/
+html {
+    height: 100%;
+}
+
+/*styling for the body tags, giving general flair too everything not directly tagged within the body tag*/
+body {
+    background-color: rgb(32, 32, 32);
+	margin: 0 auto;
+    font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-weight: 400;
+    width: 100%;
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/*background color that can fit with the warm and welcoming aesthetic that I'm going for*/
+.bodycolor {
+	background-color: #E0CBA5
+}
+
+/*wrapping style for nav so it fits the website*/
+.wrappernav {
+	width: 100%;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 90%;
+}
+/*wrapping style for form part of the website*/
+
+/*wrapping style dealing with how I want the portfolio page too be layed out - WIP*/
+.portfolio_layout {
+	text-align: center
+}
+
+/*general styling dealing with the nav tag, from background color, position, and other small responsive designs like hovering over each respective section and color changing*/
+nav {
+	background-color: rgb(32, 32, 32)
+}
+
+nav ul {
+    text-align: center
+}
+
+nav ul li {
+    display: inline-block;
+    background: rgb(32, 32, 32);
+	margin: 0 20px;
+}
+
+nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    line-height: 20px;
+    font-size: 24px;
+    padding: 10px 20px 10px;
+}
+
+nav ul li a:hover {
+    color: #E0CBA5;
+}
+
+nav {
+	text-align: center
+}
+
+/*gives images the rounded corners, giving off a better appearance looks wise*/
+img {
+    border-radius: 30px;
+}
+
+/*aligns tags to the center of the page - WIP*/
+h1 {
+	text-align: center
+}
+
+/*id styling dealing with my portrait pic for my about me page - WIP*/
+img#portraitpic {
+	float: left;
+    margin: 30px;
+}
+
+
+
+/*stlying dealing with footer design WIP*/
+footer {
+    background-color: rgb(32, 32, 32);
+    color: whitesmoke;
+    width: 100%;
+    text-align: center;  
+    margin-top: auto;
+}
