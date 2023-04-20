@@ -7,7 +7,7 @@ html {
 body {
     background-color: rgb(32, 32, 32);
 	margin: 0 auto;
-    font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-family:"Cambria", "Hoefler Text", "Liberation Serif", "Times New Roman", "serif";
     font-weight: 400;
     width: 100%;
     min-height: 100%;
@@ -18,10 +18,10 @@ body {
 
 /*background color that can fit with the warm and welcoming aesthetic that I'm going for*/
 .bodycolor {
-	background-color: #E0CBA5
+	background-color: #E0CBA5;
 }
 
-/*wrapping style for nav so it fits the website*/
+/*wrapping style for nav and other tages so it fits the website*/
 .wrappernav {
 	width: 100%;
 }
@@ -29,12 +29,6 @@ body {
 .wrapper {
     margin: 0 auto;
     width: 90%;
-}
-/*wrapping style for form part of the website*/
-
-/*wrapping style dealing with how I want the portfolio page too be layed out - WIP*/
-.portfolio_layout {
-	text-align: center
 }
 
 /*general styling dealing with the nav tag, from background color, position, and other small responsive designs like hovering over each respective section and color changing*/
@@ -68,29 +62,132 @@ nav {
 	text-align: center
 }
 
-/*gives images the rounded corners, giving off a better appearance looks wise*/
-img {
-    border-radius: 30px;
+/*styling for the logo img*/
+img#logo_pic {
+    width: 150px;
+    height: 175px;
+    border-radius: 0px;
+    border: rgb(32, 32, 32);
+    margin-top: -25px;
+    margin-bottom: -80px;
 }
 
-/*aligns tags to the center of the page - WIP*/
+
+/*gives images the rounded corners, giving off a better appearance looks wise*/
+img {
+    border-radius: 10px;
+    border: 5px solid white;
+}
+
+/*aligns tags to the center of the page*/
 h1 {
 	text-align: center
 }
 
-/*id styling dealing with my portrait pic for my about me page - WIP*/
+/*id attribute for the paragraph for the about me page*/
+p#about_me {
+    margin-top: 160px;
+    line-height: 32px;
+}
+
+/*id attribute for the paragraph for respective pages that I want with text centered*/
+p#text_space {
+    line-height: 32px;
+    text-align: center;
+}
+
+/*styling to space out text for contact me page*/
+.contact_me_text {
+    line-height: 26px;
+}
+
+/*styling to move form sheet on the right of the contact me page*/
+.contact_form {
+    float:right;
+}
+
+/*styling for the button on the contact me page*/
+.button {
+    text-align: center;
+}
+
+/*styling for index page images*/
+.index_images img{
+    box-shadow: 0 1.5rem 3rem -1.05rem black;
+    margin: 20px;
+}
+
+.index_images {
+    text-align: center;
+}
+
+
+.index_images img:hover {    
+    transform: scale(1.1);
+}
+
+/*id styling dealing with my portrait pic for my about me page*/
 img#portraitpic {
 	float: left;
-    margin: 30px;
+    margin: 25px;
+}
+
+/*styling for the portfolio images*/
+.slider_container {
+    padding: 5rem;
+
+}
+
+.slider_wrapper {
+    flex: auto;
+    max-width: 51.25rem;
+    margin: 0 auto;
+
+}
+
+.slider {
+    display: flex;
+    overflow-x:scroll;
+    border-radius: 0.5rem;
 }
 
 
 
-/*stlying dealing with footer design WIP*/
+/*stlying dealing with footer design*/
 footer {
     background-color: rgb(32, 32, 32);
     color: whitesmoke;
     width: 100%;
     text-align: center;  
     margin-top: auto;
+}
+
+/*styling for the scrollbar*/
+::-webkit-scrollbar {
+    height: 1.35em;
+    width: 1.5em;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(32, 32, 32);
+    border-radius: 100vw;
+    margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #E0CBA5;
+    border-radius: 100vw;
+    border: .25em solid;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(173, 156, 122);
+    
+}
+
+@supports (scrollbar-color: auto) {
+    * {
+        scrollbar-color: #E0CBA5 rgb(32, 32, 32);
+        scrollbar-width: auto;
+    }
 }
